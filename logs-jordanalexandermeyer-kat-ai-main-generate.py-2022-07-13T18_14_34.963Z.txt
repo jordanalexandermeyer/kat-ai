@@ -1,0 +1,512 @@
+
+[     UTC     ] Logs for jordanalexandermeyer-kat-ai-generate-w1xu3e.streamlitapp.com/
+────────────────────────────────────────────────────────────────────────────────────────
+[18:02:56] 🖥 Provisioning machine...
+[18:00:35] 🚀 Starting up repository: 'kat-ai', branch: 'main', main module: 'generate.py'
+[18:00:35] 🐙 Cloning repository...
+[18:00:52] 🐙 Cloning into '/app/kat-ai'...
+
+[18:00:52] 🐙 Cloned repository!
+[18:00:52] 🐙 Pulling code changes from Github...
+[18:01:03] 📦 Processing dependencies...
+Collecting package metadata (repodata.json): ...working... [2022-07-13 18:02:35.866850] done
+[18:02:58] 🎛 Preparing system...
+[18:02:58] ⛓ Spinning up manager process...
+Solving environment: ...working... [2022-07-13 18:03:00.622795] done
+
+Downloading and Extracting Packages
+colorama-0.4.5       | 18 KB     |            |   0% [2022-07-13 18:03:00.844493] colorama-0.4.5       | 18 KB     | ########8  |  88% [2022-07-13 18:03:00.855970] colorama-0.4.5       | 18 KB     | ########## | 100% [2022-07-13 18:03:00.856290] 
+conda-package-handli | 1018 KB   |            |   0% [2022-07-13 18:03:01.114833] conda-package-handli | 1018 KB   | ########## | 100% [2022-07-13 18:03:01.115272] conda-package-handli | 1018 KB   | ########## | 100% [2022-07-13 18:03:01.115485] 
+urllib3-1.25.8       | 160 KB    |            |   0% [2022-07-13 18:03:01.212836] urllib3-1.25.8       | 160 KB    | ########## | 100% [2022-07-13 18:03:01.213109] 
+Verifying transaction: ...working... [2022-07-13 18:03:15.182338] done
+Executing transaction: ...working... [2022-07-13 18:03:28.770413] done
+Installing pip dependencies: ...working... [2022-07-13 18:04:10.813107] Ran pip subprocess with arguments:
+['/home/appuser/.conda/bin/python', '-m', 'pip', 'install', '-U', '-r', '/app/kat-ai/condaenv.7yt02wzq.requirements.txt']
+Pip subprocess output:
+Collecting gpt-2-simple
+  Downloading gpt_2_simple-0.8.1.tar.gz (26 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting tensorflow
+  Downloading tensorflow-2.9.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (511.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 511.7/511.7 MB 221.6 MB/s eta 0:00:00
+Collecting regex
+  Downloading regex-2022.7.9-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (765 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 765.0/765.0 kB 139.9 MB/s eta 0:00:00
+Collecting requests
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 113.5 MB/s eta 0:00:00
+Collecting tqdm
+  Downloading tqdm-4.64.0-py2.py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 kB 192.7 MB/s eta 0:00:00
+Collecting numpy
+  Downloading numpy-1.23.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 231.0 MB/s eta 0:00:00
+Collecting toposort
+  Downloading toposort-1.7-py2.py3-none-any.whl (9.0 kB)
+Collecting tensorflow-estimator<2.10.0,>=2.9.0rc0
+  Downloading tensorflow_estimator-2.9.0-py2.py3-none-any.whl (438 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 438.7/438.7 kB 176.2 MB/s eta 0:00:00
+Collecting libclang>=13.0.0
+  Downloading libclang-14.0.1-py2.py3-none-manylinux1_x86_64.whl (14.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.5/14.5 MB 222.5 MB/s eta 0:00:00
+Collecting h5py>=2.9.0
+  Downloading h5py-3.7.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 184.9 MB/s eta 0:00:00
+Collecting tensorboard<2.10,>=2.9
+  Downloading tensorboard-2.9.1-py3-none-any.whl (5.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 202.0 MB/s eta 0:00:00
+Collecting typing-extensions>=3.6.6
+  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 161.1 MB/s eta 0:00:00
+Collecting absl-py>=1.0.0
+  Downloading absl_py-1.1.0-py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.7/123.7 kB 212.5 MB/s eta 0:00:00
+Collecting gast<=0.4.0,>=0.2.1
+  Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
+Collecting wrapt>=1.11.0
+  Downloading wrapt-1.14.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (81 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.0/81.0 kB 182.3 MB/s eta 0:00:00
+Collecting opt-einsum>=2.3.2
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 161.7 MB/s eta 0:00:00
+Collecting keras<2.10.0,>=2.9.0rc0
+  Downloading keras-2.9.0-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 222.4 MB/s eta 0:00:00
+Collecting protobuf<3.20,>=3.9.2
+  Downloading protobuf-3.19.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 120.1 MB/s eta 0:00:00
+Collecting tensorflow-io-gcs-filesystem>=0.23.1
+  Downloading tensorflow_io_gcs_filesystem-0.26.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (2.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 125.1 MB/s eta 0:00:00
+Collecting flatbuffers<2,>=1.12
+  Downloading flatbuffers-1.12-py2.py3-none-any.whl (15 kB)
+Collecting astunparse>=1.6.0
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting google-pasta>=0.1.1
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 178.2 MB/s eta 0:00:00
+Collecting six>=1.12.0
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting termcolor>=1.1.0
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting setuptools
+  Downloading setuptools-63.1.0-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 151.2 MB/s eta 0:00:00
+Collecting keras-preprocessing>=1.1.1
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.6/42.6 kB 98.9 MB/s eta 0:00:00
+Collecting grpcio<2.0,>=1.24.3
+  Downloading grpcio-1.47.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 239.5 MB/s eta 0:00:00
+Collecting wheel<1.0,>=0.23.0
+  Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+Collecting tensorboard-data-server<0.7.0,>=0.6.0
+  Downloading tensorboard_data_server-0.6.1-py3-none-manylinux2010_x86_64.whl (4.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 271.0 MB/s eta 0:00:00
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.6-py2.py3-none-any.whl (18 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.3.7-py3-none-any.whl (97 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.8/97.8 kB 22.6 MB/s eta 0:00:00
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.8.1-py3-none-any.whl (781 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 781.3/781.3 kB 257.6 MB/s eta 0:00:00
+Collecting google-auth<3,>=1.6.3
+  Downloading google_auth-2.9.1-py2.py3-none-any.whl (167 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 167.8/167.8 kB 236.4 MB/s eta 0:00:00
+Collecting werkzeug>=1.0.1
+  Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.9/224.9 kB 236.6 MB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.10-py2.py3-none-any.whl (139 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.2/139.2 kB 216.1 MB/s eta 0:00:00
+Collecting charset-normalizer<3,>=2
+  Downloading charset_normalizer-2.1.0-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 184.9 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.6.15-py3-none-any.whl (160 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.2/160.2 kB 114.4 MB/s eta 0:00:00
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 203.5 MB/s eta 0:00:00
+Collecting rsa<5,>=3.1.4
+  Downloading rsa-4.8-py3-none-any.whl (39 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 kB 199.8 MB/s eta 0:00:00
+Collecting cachetools<6.0,>=2.0.0
+  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Collecting importlib-metadata>=4.4
+  Downloading importlib_metadata-4.12.0-py3-none-any.whl (21 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.8.1-py3-none-any.whl (5.6 kB)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 kB 193.8 MB/s eta 0:00:00
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.2.0-py3-none-any.whl (151 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.5/151.5 kB 215.4 MB/s eta 0:00:00
+Building wheels for collected packages: gpt-2-simple, termcolor
+  Building wheel for gpt-2-simple (setup.py): started
+  Building wheel for gpt-2-simple (setup.py): finished with status 'done'
+  Created wheel for gpt-2-simple: filename=gpt_2_simple-0.8.1-py3-none-any.whl size=24560 sha256=f2ae44cc226e55e4fcab3841c1ee78ad66db20891cc40fcdfa19305ccf058dbd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uxz1xjjt/wheels/d0/74/e6/92bfd7a4a0e9358f786896f3d77d6e85ba488b1aff51d1ea2e
+  Building wheel for termcolor (setup.py): started
+  Building wheel for termcolor (setup.py): finished with status 'done'
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4832 sha256=065b94aac2e4932abeb7e48643e0d9b9f112a5e5b877fd80916244b2848d4f22
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uxz1xjjt/wheels/a0/16/9c/5473df82468f958445479c59e784896fa24f4a5fc024b0f501
+Successfully built gpt-2-simple termcolor
+Installing collected packages: toposort, termcolor, tensorboard-plugin-wit, pyasn1, libclang, keras, flatbuffers, zipp, wrapt, wheel, werkzeug, urllib3, typing-extensions, tqdm, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, setuptools, rsa, regex, pyparsing, pyasn1-modules, protobuf, oauthlib, numpy, idna, gast, charset-normalizer, certifi, cachetools, absl-py, requests, packaging, opt-einsum, keras-preprocessing, importlib-metadata, h5py, grpcio, google-pasta, google-auth, astunparse, requests-oauthlib, markdown, google-auth-oauthlib, tensorboard, tensorflow, gpt-2-simple
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.37.1
+    Uninstalling wheel-0.37.1:
+      Successfully uninstalled wheel-0.37.1
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.25.8
+    Uninstalling urllib3-1.25.8:
+      Successfully uninstalled urllib3-1.25.8
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.64.0
+    Uninstalling tqdm-4.64.0:
+      Successfully uninstalled tqdm-4.64.0
+  Attempting uninstall: six
+    Found existing installation: six 1.16.0
+    Uninstalling six-1.16.0:
+      Successfully uninstalled six-1.16.0
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 63.1.0
+    Uninstalling setuptools-63.1.0:
+      Successfully uninstalled setuptools-63.1.0
+  Attempting uninstall: idna
+    Found existing installation: idna 3.3
+    Uninstalling idna-3.3:
+      Successfully uninstalled idna-3.3
+  Attempting uninstall: charset-normalizer
+    Found existing installation: charset-normalizer 2.0.4
+    Uninstalling charset-normalizer-2.0.4:
+      Successfully uninstalled charset-normalizer-2.0.4
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2022.6.15
+    Uninstalling certifi-2022.6.15:
+      Successfully uninstalled certifi-2022.6.15
+  Attempting uninstall: requests
+    Found existing installation: requests 2.28.1
+    Uninstalling requests-2.28.1:
+      Successfully uninstalled requests-2.28.1
+Successfully installed absl-py-1.1.0 astunparse-1.6.3 cachetools-5.2.0 certifi-2022.6.15 charset-normalizer-2.1.0 flatbuffers-1.12 gast-0.4.0 google-auth-2.9.1 google-auth-oauthlib-0.4.6 google-pasta-0.2.0 gpt-2-simple-0.8.1 grpcio-1.47.0 h5py-3.7.0 idna-3.3 importlib-metadata-4.12.0 keras-2.9.0 keras-preprocessing-1.1.2 libclang-14.0.1 markdown-3.3.7 numpy-1.23.1 oauthlib-3.2.0 opt-einsum-3.3.0 packaging-21.3 protobuf-3.19.4 pyasn1-0.4.8 pyasn1-modules-0.2.8 pyparsing-3.0.9 regex-2022.7.9 requests-2.28.1 requests-oauthlib-1.3.1 rsa-4.8 setuptools-63.1.0 six-1.16.0 tensorboard-2.9.1 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.1 tensorflow-2.9.1 tensorflow-estimator-2.9.0 tensorflow-io-gcs-filesystem-0.26.0 termcolor-1.1.0 toposort-1.7 tqdm-4.64.0 typing-extensions-4.3.0 urllib3-1.26.10 werkzeug-2.1.2 wheel-0.37.1 wrapt-1.14.1 zipp-3.8.1
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate base
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[18:04:30] 🐍 Python dependencies were installed from /app/kat-ai/environment.yml using conda.
+Check if streamlit is installed
+
+──────────────────────────────── Installing Streamlit ──────────────────────────────────
+
+Collecting streamlit
+  Downloading streamlit-1.10.0-py2.py3-none-any.whl (9.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.1/9.1 MB 107.9 MB/s eta 0:00:00[2022-07-13 18:04:31.909694] 
+Collecting pandas>=0.21.0
+  Downloading pandas-1.4.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 183.2 MB/s eta 0:00:00[2022-07-13 18:04:32.322098] 
+Collecting pympler>=0.9
+  Downloading Pympler-1.0.1-py3-none-any.whl (164 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.8/164.8 KB 146.3 MB/s eta 0:00:00[2022-07-13 18:04:32.429621] 
+Collecting pillow>=6.2.0
+  Downloading Pillow-9.2.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 222.3 MB/s eta 0:00:00[2022-07-13 18:04:32.941862] 
+Collecting rich
+  Downloading rich-12.5.1-py3-none-any.whl (235 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 235.6/235.6 KB 198.2 MB/s eta 0:00:00[2022-07-13 18:04:33.116396] 
+Collecting pyarrow
+  Downloading pyarrow-8.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (29.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.4/29.4 MB 190.6 MB/s eta 0:00:00[2022-07-13 18:04:33.432401] 
+Collecting numpy
+  Downloading numpy-1.23.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 191.9 MB/s eta 0:00:00[2022-07-13 18:04:34.120216] 
+Collecting cachetools>=4.0
+  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+Collecting tzlocal
+  Downloading tzlocal-4.2-py3-none-any.whl (19 kB)
+Collecting gitpython!=3.1.19
+  Downloading GitPython-3.1.27-py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.2/181.2 KB 193.1 MB/s eta 0:00:00[2022-07-13 18:04:34.412033] 
+Collecting protobuf<4,>=3.12
+  Downloading protobuf-3.20.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 233.1 MB/s eta 0:00:00[2022-07-13 18:04:34.773093] 
+Collecting blinker
+  Downloading blinker-1.4.tar.gz (111 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.5/111.5 KB 201.1 MB/s eta 0:00:00[2022-07-13 18:04:34.814579] 
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting python-dateutil
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 203.5 MB/s eta 0:00:00[2022-07-13 18:04:36.786625] 
+Collecting semver
+  Downloading semver-2.13.0-py2.py3-none-any.whl (12 kB)
+Collecting click>=7.0
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 KB 154.6 MB/s eta 0:00:00[2022-07-13 18:04:36.946289] 
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 KB 140.3 MB/s eta 0:00:00[2022-07-13 18:04:37.009479] 
+Collecting importlib-metadata>=1.4
+  Downloading importlib_metadata-4.12.0-py3-none-any.whl (21 kB)
+Collecting pydeck>=0.1.dev5
+  Downloading pydeck-0.7.1-py2.py3-none-any.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 233.9 MB/s eta 0:00:00[2022-07-13 18:04:37.193892] 
+Collecting validators
+  Downloading validators-0.20.0.tar.gz (30 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting attrs
+  Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 KB 88.9 MB/s eta 0:00:00[2022-07-13 18:04:39.513705] 
+Collecting altair>=3.2.0
+  Downloading altair-4.2.0-py3-none-any.whl (812 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 812.8/812.8 KB 217.7 MB/s eta 0:00:00[2022-07-13 18:04:39.586049] 
+Collecting toml
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting requests
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 148.3 MB/s eta 0:00:00[2022-07-13 18:04:39.728159] 
+Collecting typing-extensions
+  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+Collecting tornado>=5.0
+  Downloading tornado-6.2-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (423 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 424.0/424.0 KB 222.3 MB/s eta 0:00:00[2022-07-13 18:04:39.875790] 
+Collecting watchdog
+  Downloading watchdog-2.1.9-py3-none-manylinux2014_x86_64.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 KB 174.4 MB/s eta 0:00:00[2022-07-13 18:04:39.983510] 
+Collecting entrypoints
+  Downloading entrypoints-0.4-py3-none-any.whl (5.3 kB)
+Collecting toolz
+  Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 159.6 MB/s eta 0:00:00[2022-07-13 18:04:40.079300] 
+Collecting jinja2
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 215.9 MB/s eta 0:00:00[2022-07-13 18:04:40.137313] 
+Collecting jsonschema>=3.0
+  Downloading jsonschema-4.7.2-py3-none-any.whl (81 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.1/81.1 KB 177.0 MB/s eta 0:00:00[2022-07-13 18:04:40.206809] 
+Collecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.9-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 KB 140.9 MB/s eta 0:00:00[2022-07-13 18:04:40.275758] 
+Collecting zipp>=0.5
+  Downloading zipp-3.8.1-py3-none-any.whl (5.6 kB)
+Collecting pytz>=2020.1
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 503.5/503.5 KB 159.4 MB/s eta 0:00:00[2022-07-13 18:04:40.503290] 
+Collecting ipykernel>=5.1.2
+  Downloading ipykernel-6.15.1-py3-none-any.whl (132 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.9/132.9 KB 205.4 MB/s eta 0:00:00[2022-07-13 18:04:40.634661] 
+Collecting ipywidgets>=7.0.0
+  Downloading ipywidgets-7.7.1-py2.py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.4/123.4 KB 196.1 MB/s eta 0:00:00[2022-07-13 18:04:40.736605] 
+Collecting traitlets>=4.3.2
+  Downloading traitlets-5.3.0-py3-none-any.whl (106 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.8/106.8 KB 199.2 MB/s eta 0:00:00[2022-07-13 18:04:40.799459] 
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 KB 183.8 MB/s eta 0:00:00[2022-07-13 18:04:40.994217] 
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 143.6 MB/s eta 0:00:00[2022-07-13 18:04:41.075822] 
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.10-py2.py3-none-any.whl (139 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.2/139.2 KB 184.3 MB/s eta 0:00:00[2022-07-13 18:04:41.159654] 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.6.15-py3-none-any.whl (160 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.2/160.2 KB 151.2 MB/s eta 0:00:00[2022-07-13 18:04:41.223424] 
+Collecting charset-normalizer<3,>=2
+  Downloading charset_normalizer-2.1.0-py3-none-any.whl (39 kB)
+Collecting pygments<3.0.0,>=2.6.0
+  Downloading Pygments-2.12.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 232.4 MB/s eta 0:00:00[2022-07-13 18:04:41.366998] 
+Collecting commonmark<0.10.0,>=0.9.0
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 KB 156.5 MB/s eta 0:00:00[2022-07-13 18:04:41.420335] 
+Collecting pytz-deprecation-shim
+  Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
+Collecting decorator>=3.4.0
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Collecting jupyter-client>=6.1.12
+  Downloading jupyter_client-7.3.4-py3-none-any.whl (132 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 KB 208.9 MB/s eta 0:00:00[2022-07-13 18:04:41.801672] 
+Collecting debugpy>=1.0
+  Downloading debugpy-1.6.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 220.3 MB/s eta 0:00:00[2022-07-13 18:04:42.090521] 
+Collecting ipython>=7.23.1
+  Downloading ipython-8.4.0-py3-none-any.whl (750 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 750.8/750.8 KB 239.6 MB/s eta 0:00:00[2022-07-13 18:04:42.219114] 
+Collecting pyzmq>=17
+  Downloading pyzmq-23.2.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 237.2 MB/s eta 0:00:00[2022-07-13 18:04:42.555017] 
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.5.5-py3-none-any.whl (5.2 kB)
+Collecting psutil
+  Downloading psutil-5.9.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (281 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 281.1/281.1 KB 218.1 MB/s eta 0:00:00[2022-07-13 18:04:42.818049] 
+Collecting matplotlib-inline>=0.1
+  Downloading matplotlib_inline-0.1.3-py3-none-any.whl (8.2 kB)
+Collecting ipython-genutils~=0.2.0
+  Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting jupyterlab-widgets>=1.0.0
+  Downloading jupyterlab_widgets-1.1.1-py3-none-any.whl (245 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 245.3/245.3 KB 192.7 MB/s eta 0:00:00[2022-07-13 18:04:43.034781] 
+Collecting widgetsnbextension~=3.6.0
+  Downloading widgetsnbextension-3.6.1-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 201.2 MB/s eta 0:00:00[2022-07-13 18:04:43.136774] 
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.18.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (115 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.6/115.6 KB 188.1 MB/s eta 0:00:00[2022-07-13 18:04:43.367843] 
+Collecting tzdata
+  Downloading tzdata-2022.1-py2.py3-none-any.whl (339 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 339.5/339.5 KB 195.4 MB/s eta 0:00:00[2022-07-13 18:04:43.545318] 
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Downloading prompt_toolkit-3.0.30-py3-none-any.whl (381 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.7/381.7 KB 192.2 MB/s eta 0:00:00
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting jedi>=0.16
+  Downloading jedi-0.18.1-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 175.5 MB/s eta 0:00:00[2022-07-13 18:04:43.872122] 
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting pexpect>4.3
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.0/59.0 KB 116.2 MB/s eta 0:00:00[2022-07-13 18:04:43.987971] 
+Collecting setuptools>=18.5
+  Downloading setuptools-63.1.0-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 214.1 MB/s eta 0:00:00[2022-07-13 18:04:44.458411] 
+Collecting stack-data
+  Downloading stack_data-0.3.0-py3-none-any.whl (23 kB)
+Collecting jupyter-core>=4.9.2
+  Downloading jupyter_core-4.11.1-py3-none-any.whl (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.4/88.4 KB 168.9 MB/s eta 0:00:00[2022-07-13 18:04:44.638242] 
+Collecting notebook>=4.4.1
+  Downloading notebook-6.4.12-py3-none-any.whl (9.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 195.4 MB/s eta 0:00:00[2022-07-13 18:04:44.874849] 
+Collecting parso<0.9.0,>=0.8.0
+  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 KB 160.5 MB/s eta 0:00:00[2022-07-13 18:04:45.024322] 
+Collecting Send2Trash>=1.8.0
+  Downloading Send2Trash-1.8.0-py3-none-any.whl (18 kB)
+Collecting nbformat
+  Downloading nbformat-5.4.0-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.3/73.3 KB 184.1 MB/s eta 0:00:00[2022-07-13 18:04:45.174446] 
+Collecting nbconvert>=5
+  Downloading nbconvert-6.5.0-py3-none-any.whl (561 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 561.6/561.6 KB 204.9 MB/s eta 0:00:00[2022-07-13 18:04:45.264617] 
+Collecting argon2-cffi
+  Downloading argon2_cffi-21.3.0-py3-none-any.whl (14 kB)
+Collecting prometheus-client
+  Downloading prometheus_client-0.14.1-py3-none-any.whl (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.5/59.5 KB 48.1 MB/s eta 0:00:00[2022-07-13 18:04:45.418035] 
+Collecting terminado>=0.8.3
+  Downloading terminado-0.15.0-py3-none-any.whl (16 kB)
+Collecting ptyprocess>=0.5
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth
+  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting pure-eval
+  Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting asttokens
+  Downloading asttokens-2.0.5-py2.py3-none-any.whl (20 kB)
+Collecting executing
+  Downloading executing-0.8.3-py2.py3-none-any.whl (16 kB)
+Collecting tinycss2
+  Downloading tinycss2-1.1.1-py3-none-any.whl (21 kB)
+Collecting nbclient>=0.5.0
+  Downloading nbclient-0.6.6-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.8/71.8 KB 186.0 MB/s eta 0:00:00[2022-07-13 18:04:45.880727] 
+Collecting jupyterlab-pygments
+  Downloading jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
+Collecting mistune<2,>=0.8.1
+  Downloading mistune-0.8.4-py2.py3-none-any.whl (16 kB)
+Collecting pandocfilters>=1.4.1
+  Downloading pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
+Collecting defusedxml
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.2/128.2 KB 176.8 MB/s eta 0:00:00[2022-07-13 18:04:46.131512] 
+Collecting bleach
+  Downloading bleach-5.0.1-py3-none-any.whl (160 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.9/160.9 KB 193.4 MB/s eta 0:00:00[2022-07-13 18:04:46.205249] 
+Collecting fastjsonschema
+  Downloading fastjsonschema-2.15.3-py3-none-any.whl (22 kB)
+Collecting argon2-cffi-bindings
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (86 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 KB 156.1 MB/s eta 0:00:00[2022-07-13 18:04:46.420272] 
+Collecting cffi>=1.0.1
+  Downloading cffi-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.2/441.2 KB 189.6 MB/s eta 0:00:00[2022-07-13 18:04:46.869518] 
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 172.7 MB/s eta 0:00:00[2022-07-13 18:04:47.146516] 
+Building wheels for collected packages: blinker, validators
+  Building wheel for blinker (setup.py): started
+  Building wheel for blinker (setup.py): finished with status 'done'
+  Created wheel for blinker: filename=blinker-1.4-py3-none-any.whl size=13459 sha256=4f733f8f4c6b3799607c05cd34e614e210ba1c1a6b1367775b3a2eed1f64b37c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-nxj7lclf/wheels/50/93/f8/4f0a42a03a06626d675f13907b6982ad5ecff383530af5a900
+  Building wheel for validators (setup.py): started
+  Building wheel for validators (setup.py): finished with status 'done'
+  Created wheel for validators: filename=validators-0.20.0-py3-none-any.whl size=19579 sha256=6afacab3f298a58c39555289726f11969cbedc9bd8cb09a1ec41adb7155e223c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-nxj7lclf/wheels/2d/f0/a8/1094fca7a7e5d0d12ff56e0c64675d72aa5cc81a5fc200e849
+Successfully built blinker validators
+Installing collected packages: webencodings, wcwidth, Send2Trash, pytz, pure-eval, ptyprocess, pickleshare, mistune, ipython-genutils, fastjsonschema, executing, commonmark, blinker, backcall, zipp, watchdog, urllib3, tzdata, typing-extensions, traitlets, tornado, toolz, toml, tinycss2, soupsieve, smmap, six, setuptools, semver, pyzmq, pyrsistent, pyparsing, pympler, pygments, pycparser, psutil, protobuf, prompt-toolkit, prometheus-client, pillow, pexpect, parso, pandocfilters, numpy, nest-asyncio, MarkupSafe, jupyterlab-widgets, jupyterlab-pygments, idna, entrypoints, defusedxml, decorator, debugpy, click, charset-normalizer, certifi, cachetools, attrs, validators, terminado, rich, requests, pytz-deprecation-shim, python-dateutil, pyarrow, packaging, matplotlib-inline, jupyter-core, jsonschema, jinja2, jedi, importlib-metadata, gitdb, cffi, bleach, beautifulsoup4, asttokens, tzlocal, stack-data, pandas, nbformat, jupyter-client, gitpython, argon2-cffi-bindings, nbclient, ipython, argon2-cffi, altair, nbconvert, ipykernel, notebook, widgetsnbextension, ipywidgets, pydeck, streamlit
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 62.6.0
+    Uninstalling setuptools-62.6.0:
+      Successfully uninstalled setuptools-62.6.0
+Successfully installed MarkupSafe-2.1.1 Send2Trash-1.8.0 altair-4.2.0 argon2-cffi-21.3.0 argon2-cffi-bindings-21.2.0 asttokens-2.0.5 attrs-21.4.0 backcall-0.2.0 beautifulsoup4-4.11.1 bleach-5.0.1 blinker-1.4 cachetools-5.2.0 certifi-2022.6.15 cffi-1.15.1 charset-normalizer-2.1.0 click-8.1.3 commonmark-0.9.1 debugpy-1.6.2 decorator-5.1.1 defusedxml-0.7.1 entrypoints-0.4 executing-0.8.3 fastjsonschema-2.15.3 gitdb-4.0.9 gitpython-3.1.27 idna-3.3 importlib-metadata-4.12.0 ipykernel-6.15.1 ipython-8.4.0 ipython-genutils-0.2.0 ipywidgets-7.7.1 jedi-0.18.1 jinja2-3.1.2 jsonschema-4.7.2 jupyter-client-7.3.4 jupyter-core-4.11.1 jupyterlab-pygments-0.2.2 jupyterlab-widgets-1.1.1 matplotlib-inline-0.1.3 mistune-0.8.4 nbclient-0.6.6 nbconvert-6.5.0 nbformat-5.4.0 nest-asyncio-1.5.5 notebook-6.4.12 numpy-1.23.1 packaging-21.3 pandas-1.4.3 pandocfilters-1.5.0 parso-0.8.3 pexpect-4.8.0 pickleshare-0.7.5 pillow-9.2.0 prometheus-client-0.14.1 prompt-toolkit-3.0.30 protobuf-3.20.1 psutil-5.9.1 ptyprocess-0.7.0 pure-eval-0.2.2 pyarrow-8.0.0 pycparser-2.21 pydeck-0.7.1 pygments-2.12.0 pympler-1.0.1 pyparsing-3.0.9 pyrsistent-0.18.1 python-dateutil-2.8.2 pytz-2022.1 pytz-deprecation-shim-0.1.0.post0 pyzmq-23.2.0 requests-2.28.1 rich-12.5.1 semver-2.13.0 setuptools-63.1.0 six-1.16.0 smmap-5.0.0 soupsieve-2.3.2.post1 stack-data-0.3.0 streamlit-1.10.0 terminado-0.15.0 tinycss2-1.1.1 toml-0.10.2 toolz-0.12.0 tornado-6.2 traitlets-5.3.0 typing-extensions-4.3.0 tzdata-2022.1 tzlocal-4.2 urllib3-1.26.10 validators-0.20.0 watchdog-2.1.9 wcwidth-0.2.5 webencodings-0.5.1 widgetsnbextension-3.6.1 zipp-3.8.1
+WARNING: You are using pip version 22.0.3; however, version 22.1.2 is available.
+You should consider upgrading via the '/home/appuser/venv/bin/python -m pip install --upgrade pip' command.
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:05:18] 📦 Processed dependencies!
+
+
+
+2022-07-13 18:05:30.165 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/scriptrunner/script_runner.py", line 554, in _run_script
+    exec(code, module.__dict__)
+  File "generate.py", line 2, in <module>
+    import gpt_2_simple as gpt2
+ModuleNotFoundError: No module named 'gpt_2_simple'
+2022-07-13 18:11:51.831 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/scriptrunner/script_runner.py", line 554, in _run_script
+    exec(code, module.__dict__)
+  File "generate.py", line 2, in <module>
+    import gpt_2_simple as gpt2
+ModuleNotFoundError: No module named 'gpt_2_simple'
