@@ -1,10 +1,10 @@
 name: kat-ai
 channels:
+  - apple
   - conda-forge
 dependencies:
-  - python=3.8.13
   - pip=22.1.2
+  - python=3.8
   - pip:
       - gpt-2-simple
-      - streamlit
-prefix: /Users/jam/miniforge3/envs/kat-ai
+      - tensorflow
