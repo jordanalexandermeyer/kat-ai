@@ -1,4 +1,3 @@
-#Import streamlit library
 import streamlit as st
 import gpt_2_simple as gpt2
 
